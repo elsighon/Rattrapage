@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:text="Cartes de soumission"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="75dp"
+        android:backgroundTint="#F5F5F5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/Relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/lachaise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lachaise"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/lachaisemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lachaise@gmail.com"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@id/lachaise"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/soumission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22/03/2020"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@id/lachaisemail"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/buzistar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buzistar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@id/soumission"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/evaluer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="à évaluer"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@id/buzistar"
+            tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="40dp"
+        android:backgroundTint="#F5F5F5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/Relative2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/nom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lachaise"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lachaise@gmail.com"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_below="@id/nom" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22/03/2020"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_below="@id/mail" />
+
+            <TextView
+                android:id="@+id/projet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buzistar"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_below="@id/date" />
+
+            <TextView
+                android:id="@+id/interet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="à évaluer"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_below="@id/projet" />
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
