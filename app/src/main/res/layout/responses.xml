@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1" >
+
+        <RelativeLayout
+            android:id="@+id/Relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/titre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Réponses"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"/>
+
+            <View
+                android:id="@+id/trait"
+                android:layout_width="63dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="165dp"
+                android:background="#6E6E6E"
+                android:layout_below="@id/titre"/>
+
+            <TextView
+                android:id="@+id/Question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Type de site souhaité ?"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_below="@id/titre"/>
+
+            <TextView
+                android:id="@+id/reponse1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="• Site vitrine"
+                android:layout_below="@id/Question1" />
+
+            <View
+                android:id="@+id/trait1"
+                style="@style/trait"
+                android:layout_below="@id/reponse1"/>
+
+            <TextView
+                android:id="@+id/Question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="A qui s'adresse le projet?"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_below="@id/trait1"/>
+
+            <TextView
+                android:id="@+id/reponse2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="• Particuliers
+"
+                android:layout_below="@id/Question2" />
+
+            <TextView
+                android:id="@+id/reponse2bis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="• Entreprises"
+                android:layout_below="@id/reponse2" />
+
+            <View
+                android:id="@+id/trait2"
+                style="@style/trait"
+                android:layout_below="@id/reponse2bis"/>
+
+            <TextView
+                android:id="@+id/Question3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Type de site souhaité"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_below="@id/trait2"/>
+
+            <TextView
+                android:id="@+id/reponse3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="• Vendre des produits"
+                android:layout_below="@id/Question3" />
+
+            <TextView
+                android:id="@+id/reponse3bis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="• Améliorer sa notoriété"
+                android:layout_below="@id/reponse3" />
+
+            <TextView
+                android:id="@+id/reponse3third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="• Fidéliser ses clients"
+                android:layout_below="@id/reponse3bis" />
+
+            <View
+                android:id="@+id/trait3"
+                style="@style/trait"
+                android:layout_below="@id/reponse3third"/>
+
+            <TextView
+                android:id="@+id/Question4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Délai souhaité  ?"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_below="@id/trait3"/>
+
+            <TextView
+                android:id="@+id/reponse4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="• 6 mois"
+                android:layout_below="@id/Question4" />
+
+            <View
+                android:id="@+id/trait4"
+                style="@style/trait"
+                android:layout_below="@id/reponse4"/>
+
+            <TextView
+                android:id="@+id/Question5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Secteur d'activité ?"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_below="@id/trait4"/>
+
+            <TextView
+                android:id="@+id/reponse5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="• Commerce / Négoce / Distribution"
+                android:layout_below="@id/Question5" />
+
+            <View
+                android:id="@+id/trait5"
+                style="@style/trait"
+                android:layout_below="@id/reponse5"/>
+
+            <TextView
+                android:id="@+id/Question6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Est-ce une création ?"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_below="@id/trait5"/>
+
+            <TextView
+                android:id="@+id/reponse6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="• Non"
+                android:layout_below="@id/Question6" />
+
+            <View
+                android:id="@+id/trait6"
+                style="@style/trait"
+                android:layout_below="@id/reponse6"/>
+
+            <TextView
+                android:id="@+id/Question7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Si il y a une création, quels sont les points forts ? "
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_below="@id/trait6"/>
+
+            <TextView
+                android:id="@+id/reponse7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="• Contenu"
+                android:layout_below="@id/Question7" />
+
+            <TextView
+                android:id="@+id/reponse7bis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="• Ergonomie"
+                android:layout_below="@id/reponse7" />
+
+            <TextView
+                android:id="@+id/reponse7third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="• Crédibilité"
+                android:layout_below="@id/reponse7bis" />
+
+            <View
+                android:id="@+id/trait7"
+                style="@style/trait"
+                android:layout_below="@id/reponse7third"/>
+
+
+            <TextView
+                android:id="@+id/Question8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Si il y a une création, quels sont les points forts ? "
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_below="@id/trait7"/>
+
+            <TextView
+                android:id="@+id/reponse8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="• Réactivité "
+                android:layout_below="@id/Question8" />
+
+            <TextView
+                android:id="@+id/reponse8bis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="• Référencement"
+                android:layout_below="@id/reponse8" />
+
+            <View
+                android:id="@+id/trait8"
+                style="@style/trait"
+                android:layout_below="@id/reponse8bis"/>
+
+            <TextView
+                android:id="@+id/Question9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Si il y a une création, quelle est l’adresse ?"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_below="@id/trait8"/>
+
+            <TextView
+                android:id="@+id/reponse9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="• www.busistar.com"
+                android:layout_below="@id/Question9" />
+
+            <View
+                android:id="@+id/trait9"
+                style="@style/trait"
+                android:layout_below="@id/reponse9"/>
+
+            <TextView
+                android:id="@+id/Question10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Existe-t-il du contenu ? "
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_below="@id/trait9"/>
+
+            <TextView
+                android:id="@+id/reponse10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="• Oui"
+                android:layout_below="@id/Question10" />
+
+            <View
+                android:id="@+id/trait10"
+                style="@style/trait"
+                android:layout_below="@id/reponse10"/>
+
+            <TextView
+                android:id="@+id/Question11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Nombre de page que devra comporter le site ?"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_below="@id/trait10"/>
+
+            <TextView
+                android:id="@+id/reponse11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="• 5 pages"
+                android:layout_below="@id/Question11" />
+
+            <View
+                android:id="@+id/trait11"
+                style="@style/trait"
+                android:layout_below="@id/reponse11"/>
+
+            <TextView
+                android:id="@+id/Question12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Quelles sont-elles ?"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_below="@id/trait11"/>
+
+            <TextView
+                android:id="@+id/reponse12bis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="• Accueil"
+                android:layout_below="@id/Question12" />
+
+            <TextView
+                android:id="@+id/reponse12third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="• Boutique"
+                android:layout_below="@id/reponse12bis" />
+
+            <TextView
+                android:id="@+id/reponse12four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="• Fiche produit"
+                android:layout_below="@id/reponse12third" />
+
+            <TextView
+                android:id="@+id/reponse12five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="• Panier"
+                android:layout_below="@id/reponse12four" />
+
+            <TextView
+                android:id="@+id/reponse12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="• Page de contact"
+                android:layout_below="@id/reponse12five" />
+
+            <View
+                android:id="@+id/trait12"
+                style="@style/trait"
+                android:layout_below="@id/reponse12"/>
+
+            <TextView
+                android:id="@+id/Question13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Besoin rédactionnel ? "
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_below="@id/trait12"/>
+
+            <TextView
+                android:id="@+id/reponse13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="• Non"
+                android:layout_below="@id/Question13" />
+
+            <View
+                android:id="@+id/trait13"
+                style="@style/trait"
+                android:layout_below="@id/reponse13"/>
+
+            <TextView
+                android:id="@+id/Question14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Migration à prévoir ?"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_below="@id/trait13"/>
+
+            <TextView
+                android:id="@+id/reponse14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="• Oui"
+                android:layout_below="@id/Question14" />
+
+            <View
+                android:id="@+id/trait14"
+                style="@style/trait"
+                android:layout_below="@id/reponse14"/>
+
+            <TextView
+                android:id="@+id/Question15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Présence de charte graphique ?"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_below="@id/trait14"/>
+
+            <TextView
+                android:id="@+id/reponse15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="• Oui"
+                android:layout_below="@id/Question15" />
+
+            <View
+                android:id="@+id/trait15"
+                style="@style/trait"
+                android:layout_below="@id/reponse15"/>
+
+            <TextView
+                android:id="@+id/Question16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Besoin d’un support de com ?"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_below="@id/trait15"/>
+
+            <TextView
+                android:id="@+id/reponse16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="• Non"
+                android:layout_below="@id/Question16" />
+
+            <View
+                android:id="@+id/trait16"
+                style="@style/trait"
+                android:layout_below="@id/reponse16"/>
+
+            <TextView
+                android:id="@+id/Question17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Précision des besoins "
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_below="@id/trait16"/>
+
+            <TextView
+                android:id="@+id/reponse17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="• Améliorer notre visibilité et fidéliser au mieux nos clients."
+                android:layout_below="@id/Question17" />
+
+            <View
+                android:id="@+id/trait17"
+                style="@style/trait"
+                android:layout_below="@id/reponse17"/>
+
+            <TextView
+                android:id="@+id/Question18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Fonctionnalités attendues ?"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_below="@id/trait17"/>
+
+            <TextView
+                android:id="@+id/reponse18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="• Bouton d'achat rapide"
+                android:layout_below="@id/Question18" />
+
+            <TextView
+                android:id="@+id/reponse18bis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="• Navbar fluide et simple"
+                android:layout_below="@id/reponse18" />
+
+            <TextView
+                android:id="@+id/reponse18third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="• Formulaire de contact bref"
+                android:layout_below="@id/reponse18bis" />
+
+            <View
+                android:id="@+id/trait18"
+                style="@style/trait"
+                android:layout_below="@id/reponse18third"/>
+
+            <TextView
+                android:id="@+id/Question19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Limitation spécifique"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_below="@id/trait18"/>
+
+            <TextView
+                android:id="@+id/reponse19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="• Extranet"
+                android:layout_below="@id/Question19" />
+
+            <View
+                android:id="@+id/trait19"
+                style="@style/trait"
+                android:layout_below="@id/reponse19"/>
+
+            <TextView
+                android:id="@+id/Question20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="MAJ des contenus"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_below="@id/trait19"/>
+
+            <TextView
+                android:id="@+id/reponse20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="• Oui"
+                android:layout_below="@id/Question20" />
+
+            <View
+                android:id="@+id/trait20"
+                style="@style/trait"
+                android:layout_below="@id/reponse20"/>
+
+            <TextView
+                android:id="@+id/Question21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Hébergeur"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_below="@id/trait20"/>
+
+            <TextView
+                android:id="@+id/reponse21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="• OVH"
+                android:layout_below="@id/Question21" />
+
+            <View
+                android:id="@+id/trait21"
+                style="@style/trait"
+                android:layout_below="@id/reponse21"/>
+
+            <TextView
+                android:id="@+id/Question22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Avez-vous besoin de publicité ?"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_below="@id/trait21"/>
+
+            <TextView
+                android:id="@+id/reponse22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="• Non"
+                android:layout_below="@id/Question22" />
+
+            <View
+                android:id="@+id/trait22"
+                style="@style/trait"
+                android:layout_below="@id/reponse22"/>
+
+            <TextView
+                android:id="@+id/Question23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Détails besoins e-commerce"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_below="@id/trait22"/>
+
+            <TextView
+                android:id="@+id/reponse23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="• Moyen de paiement"
+                android:layout_below="@id/Question23" />
+
+            <TextView
+                android:id="@+id/reponse23bis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="• Fiche produit complète"
+                android:layout_below="@id/reponse23" />
+
+        </RelativeLayout>
+    </TableLayout>
+</ScrollView>
